@@ -6,24 +6,28 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Stopwatch</title>
 </head>
-<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen font-mono px-4">
+<body class="bg-gray-800  text-white flex flex-col items-center justify-center min-h-screen font-mono px-4">
 
-  <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">⏱️ Stopwatch</h1>
+  
+  <div class="bg-white/10 backdrop-blur-lg border border-white/20 w-full max-w-sm px-6 py-5 rounded-2xl shadow-[0_0_25px_6px_white] text-center">
+   <h1 class="text-3xl sm:text-4xl font-bold m-6 text-center">⏱️Stopwatch</h1>
 
-  <div class="bg-gray-800 w-full max-w-sm px-6 py-5 rounded-2xl shadow-lg text-center">
     <div class="text-4xl sm:text-5xl font-bold mb-6 tracking-wider">
-      <span id="hour">00</span>:<span id="minute">00</span>:<span id="sec">00</span>:<span id="mili">00</span>
+      <span id="hour">00</span>:<span id="minute">00</span>:<span id="sec">00</span>:<span id="mili" class="text-xl text-red-600">00</span>
     </div>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <button id="Sagar" class="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-lg text-base sm:text-lg transition">
+      <button id="Sagar" class="shadow-[0_0_5px_1px_white] bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-lg text-base sm:text-lg transition">
         Start
       </button>
-      <button id="Reset" class="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg text-base sm:text-lg transition">
+      <button id="Reset" class="shadow-[0_0_5px_1px_white] bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg text-base sm:text-lg transition">
         Reset
       </button>
     </div>
   </div>
+
+
+  
 
   <script src="script.js"></script>
 </body>
