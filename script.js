@@ -79,7 +79,7 @@ reset.addEventListener("click", () => {
   clearInterval(intervalId);
   intervalId = null;
   isRunning = false;
-  mili.innrrText ="00";
+  mili.innerText ="00";
   sec.innerText = "00";
   minute.innerText = "00";
   hour.innerText ="00";
